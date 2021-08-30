@@ -5,11 +5,11 @@
 - 功能
 
   - [配置项](zh-cn/configure)
+  - [生命周期](zh-cn/life-cycles)
   - [环境变量](zh-cn/env)
   - [JS沙箱](zh-cn/sandbox)
   - [样式隔离](zh-cn/scopecss)
   - [元素隔离](zh-cn/dom-scope)
-  - [生命周期](zh-cn/life-cycles)
   - [数据通信](zh-cn/data)
   - [静态资源](zh-cn/static-source)
   - [预加载](zh-cn/prefetch)

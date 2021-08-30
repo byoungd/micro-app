@@ -88,22 +88,6 @@ myApp.addEventListener('error', () => {
 
 <!-- tabs:end -->
 
-### 在子应用中监听生命周期
-对于子应用只有两个生命周期，挂载和卸载。
-
-**挂载**：子应用的js被执行则为挂载，所以不需要特殊的监听，一般在入口js文件中进行挂载相关操作。
-
-**卸载**：子应用被卸载时会接受到一个名为`unmount`的事件，在卸载时开发者需要对定时器、全局事件监听以及前端框架等副作用函数进行清除。
-
-```js
-// 子应用中监听卸载事件
-window.addEventListener('unmount', function () {
-  console.log('我被卸载了')
-  // react -- 卸载根组件
-  ReactDOM.unmountComponentAtNode(document.getElementById('app'))
-})
-```
-
 ### 全局监听
 全局监听会在每个应用的生命周期执行时都会触发。
 ```js
@@ -129,3 +113,33 @@ microApp.start({
   }
 })
 ```
+
+### 子应用卸载
+对于子应用只有两个生命周期，挂载和卸载。
+
+**挂载**：子应用的js被执行则为挂载，所以不需要特殊的监听，一般在入口js文件中进行挂载相关操作。
+
+**卸载**：子应用被卸载时会接受到一个名为`unmount`的事件，在卸载时开发者需要对应用进行清除。
+
+<!-- tabs:start -->
+
+#### ** React **
+```js
+// index.js
+// 子应用卸载事件
+window.addEventListener('unmount', function () {
+  // 卸载应用
+  ReactDOM.unmountComponentAtNode(document.getElementById('root'))
+})
+```
+
+#### ** Vue2 **
+```js
+// main.js
+// 子应用卸载事件
+window.addEventListener('unmount', function () {
+  // 卸载应用
+  app.$destroy()
+})
+```
+<!-- tabs:end -->
