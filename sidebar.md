@@ -3,7 +3,6 @@
   - [快速开始](zh-cn/start)
 
 - 功能
-
   - [配置项](zh-cn/configure)
   - [生命周期](zh-cn/life-cycles)
   - [环境变量](zh-cn/env)
@@ -14,13 +13,23 @@
   - [静态资源](zh-cn/static-source)
   - [预加载](zh-cn/prefetch)
   - [插件系统](zh-cn/plugins)
-  - [多层嵌套](zh-cn/qiantao)
+  - [多层嵌套](zh-cn/nest)
+  - [keep-alive](zh-cn/keep-alive)
   - [高级功能](zh-cn/advanced)
-  - [查看版本](zh-cn/version)
   - [路由](zh-cn/route)
+  - [应用之间跳转](zh-cn/jump)
+
+- 手把手
+  - [说明](zh-cn/framework/introduce)
+  - [React](zh-cn/framework/react)
+  - [Vue](zh-cn/framework/vue)
+  - [Vite](zh-cn/framework/vite)
+  - [Angular](zh-cn/framework/angular)
+  - [Nextjs](zh-cn/framework/nextjs)
+  - [Nuxtjs](zh-cn/framework/nuxtjs)
 
 - 其他
-
+  - [API](zh-cn/api)
+  - [部署](zh-cn/deploy)
   - [常见问题](zh-cn/questions)
-  - [讨论区](zh-cn/chat)
-  - [更新日志](zh-cn/scopedchangelog)
+  - [更新日志](zh-cn/changelog)

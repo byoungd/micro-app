@@ -2,7 +2,7 @@
 
 **举个栗子🌰 :**
 
-基座应用和子应用都有一个元素`<div id='root'></div>`，此时子应用通过`document.querySelector('#root')`获取到的一定是自己内部的`#root`元素，而不是基座应用的。
+基座应用和子应用都有一个元素`<div id='root'></div>`，此时子应用通过`document.querySelector('#root')`获取到的是自己内部的`#root`元素，而不是基座应用的。
 
 **基座应用可以获取子应用的元素吗？**
 
@@ -27,7 +27,7 @@ removeDomScope()
 #### ** 子应用 **
 ```js
 // 重置作用域
-window.removeDomScope?.()
+window.removeDomScope()
 ```
 <!-- tabs:end -->
 
